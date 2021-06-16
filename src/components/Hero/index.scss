@@ -1,0 +1,76 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.Hero {
+    background: linear-gradient(314.72deg, #c86dd7 -1.5%, #7e49c3 39.43%, #5912ac 86.02%);
+    width: 100%;
+    height: 90vh;
+    .container {
+        background-image: url("../../assets/img/headerBackground.svg");
+        width: 100%;
+        height: 100%;
+        @include backgroundImage;
+        @include container(row, space-around, center);
+        
+        @include mobile() {
+            background-image: url("../../assets/img/headerBackgroundMobile.svg");
+            @include backgroundImage;
+            height: 100%;
+        }
+
+        &__text {
+            max-width: 515px;
+            @include small-tablet() {
+                max-width: 375px;
+                text-align: center;
+            }
+            h2 {
+                @include paragraph(white, 40px, 400); 
+                line-height: 48px;
+            }
+            p {
+                @include paragraph(white, 18px, normal);                 
+                line-height: 28px;             
+            }
+            h2,
+            p {
+                margin-bottom: 1rem;   
+                @include small-tablet() {
+                    margin-bottom: 2rem;
+                }            
+            }
+
+            .container-video {
+                display: flex;
+                align-items: flex-end;
+                align-content: center;
+                margin-top: 2rem;
+                @include small-tablet() {
+                    align-items: center;
+                } 
+                
+                p{
+                    text-decoration: underline;
+                    @include small-tablet() {
+                        margin-bottom: 0;
+                    } 
+                }
+                .play-video {                   
+                    @include container(row, center, center);
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: $secondary;
+                    cursor: pointer;
+                    margin-right: 1rem;
+                    color: white;
+                }
+            }
+        }
+        &__image {
+            @include mobile() {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.section-contact {
+    @include section;
+    margin: 5rem 0;
+    .container {
+        @include container(column, center, center);
+        padding: 1rem;
+
+        &__text {
+            h3 {
+                @include titleH3;
+                @include small-tablet() {
+                    max-width: 328px;
+                    text-align: center;
+                }
+            }
+            p {
+                @include paragraph($text, 1rem, normal);
+                line-height: 24px;
+                @include small-tablet() {
+                    max-width: 343px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import "./variables";
+
+@mixin titleH3 {
+    font-family: "Inter", sans-serif;
+    color: $text;
+    font-weight: 500;
+    margin: 2rem 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+@mixin highlight {
+    font-family: "Inter", sans-serif;
+    color: $primary;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@mixin paragraph($color: $text, $fontSize: 1rem, $fontWeight: normal) {
+    font-family: "Inter", sans-serif;
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;    
+}
+
+@mixin section {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin navLinks {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+@mixin ulFlex {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+@mixin container($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin backgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media (max-width: #{$desktop-large}) {
+        @content;
+    }
+}
+
+@mixin small-tablet {
+    @media (max-width: #{$small-tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin small-mobile {
+    @media (max-width: #{$small-mobile}) {
+        @content;
+    }
+}

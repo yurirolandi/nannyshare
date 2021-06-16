@@ -1,0 +1,46 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.section-shared {
+    @include section;
+    margin: 5rem 0;
+    .container {
+        @include container(row, center, center);
+        padding: 1rem;
+        @include small-tablet() {
+            flex-direction: column;
+        }
+
+        img {
+            @include small-tablet() {
+                width: 80%;
+                margin-top: 2rem;
+            }
+        }
+        &__text {
+            margin-left: 2rem;
+            @include small-tablet() {
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: 0rem;
+            }
+            h3 {
+                @include titleH3;
+                @include small-tablet() {
+                    max-width: 242px;
+                    text-align: center;
+                    margin: 2rem auto;
+                }
+            }
+            p {
+                @include paragraph($text, 1rem, normal);
+                line-height: 24px;
+                max-width: 484px;
+                margin-bottom: 1rem;
+                @include small-tablet() {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

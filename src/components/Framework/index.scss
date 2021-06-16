@@ -1,0 +1,36 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.framework {
+    @include section;
+    margin: 5rem 0;
+    .container {
+        @include container(column, center, center);
+        padding: 1rem;
+        
+        &__text {
+            margin-left: 2rem;
+            @include small-tablet() {
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: 0rem;
+            }
+            h3 {
+                @include titleH3;
+            }
+            p {
+                @include paragraph($text, 18px, normal);
+                max-width: 866px;
+                margin-bottom: 1rem;
+                text-align: center;
+                line-height: 28px;
+            }
+        }
+
+        img {
+            @include small-tablet() {
+                display: none;
+            }
+        }
+    }
+}

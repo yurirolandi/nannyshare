@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.section-daily {
+    @include section;
+    margin: 5rem 0;
+    .container {
+        @include container(column, center, center);
+        padding: 1rem;
+        margin: 2rem 0;
+        &__text {
+            margin-left: 2rem;
+            
+            h3 {
+                @include titleH3;
+            }
+            p {
+                @include paragraph($text, 18px, normal);
+                max-width: 866px;
+                margin-bottom: 1rem;
+                text-align: center;
+                line-height: 28px;
+                
+                .highlight {
+                    @include highlight;
+                }
+            }
+        }
+    }
+}

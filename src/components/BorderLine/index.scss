@@ -1,0 +1,11 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.border-line {
+    width: 784px;
+    border: 2px solid #dfdfdf;
+    margin: 0 auto;
+    @include mobile() {
+        width: 328px;
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../assets/styles/variables";
+@import "../../assets//styles/mixins";
+
+.section-care {
+    @include section;
+    background-color: white;
+    .container {
+        @include container;
+        padding: 1rem;
+        flex-wrap: wrap;
+        @include small-tablet() {
+            flex-direction: column;
+        }
+        .text-highlight,
+        .text {
+            margin: 0 0.2rem 0 1rem;
+            font-size: 1rem;
+            @include small-tablet() {
+                max-width: 250px;
+                text-align: center;
+                margin: 1rem 0;
+            }
+        }
+        .text {
+            color: black;
+            font-weight: 500;
+            @include paragraph($text, 1rem, bold);
+            @include small-tablet() {
+                max-width: 350px;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
