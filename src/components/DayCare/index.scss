@@ -6,7 +6,7 @@
     background-color: white;
     .container {
         @include container;
-        padding: 1rem;
+        padding: 2rem;
         flex-wrap: wrap;
         @include small-tablet() {
             flex-direction: column;

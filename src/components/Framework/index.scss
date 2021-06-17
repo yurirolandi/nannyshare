@@ -29,6 +29,8 @@
 
         .framework-image {
             width: 100%;
+            max-width: 900px;
+            margin-top: 5rem;
             @include small-tablet() {
                 display: none;
             }

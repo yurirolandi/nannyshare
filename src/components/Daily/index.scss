@@ -6,7 +6,7 @@
     margin: 5rem 0;
     .container {
         @include container(column, center, center);
-        padding: 1rem;
+        padding: 2rem;
         margin: 2rem 0;
         &__text {
             margin-left: 2rem;

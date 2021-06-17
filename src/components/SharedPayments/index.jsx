@@ -9,7 +9,7 @@ export default function SharedPayments() {
         <div className="section-shared">
              <BorderLine />
             <div className="container">
-                <img src={ImageSection3} alt="ImageSection3" />
+                <img className="image-payments" src={ImageSection3} alt="ImageSection3" />
                 <div className="container__text">
                     <h3>Shared payments made simple</h3>
                     <p>

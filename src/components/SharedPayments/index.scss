@@ -6,12 +6,15 @@
     margin: 5rem 0;
     .container {
         @include container(row, center, center);
-        padding: 1rem;
+        padding: 2rem;
         @include small-tablet() {
             flex-direction: column;
         }
 
-        img {
+        .image-payments {
+            @include desktop-small() {
+                max-width: 384px;
+            }
             @include small-tablet() {
                 width: 80%;
                 margin-top: 2rem;
