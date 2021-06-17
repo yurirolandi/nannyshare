@@ -7,7 +7,8 @@ export const jungleServices = {
                 return response.data
             })
         } catch (error) {
-            console.log("An error occurred while trying to send the form ", error)
+            console.log("An error occurred while trying to send the form ", error);
+            return error;
         }
     }
 }
