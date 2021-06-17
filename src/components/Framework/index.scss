@@ -27,7 +27,8 @@
             }
         }
 
-        img {
+        .framework-image {
+            width: 100%;
             @include small-tablet() {
                 display: none;
             }

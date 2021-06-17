@@ -19,7 +19,7 @@ export default function Framework() {
                         <Highlight text="Read how Hapu’s tribal background defines our app" />
                     </p>
                 </div>
-                <img src={ImageSection4} alt="ImageSection4" />
+                <img className="framework-image" src={ImageSection4} alt="ImageSection4" />
             </div>            
         </div>
     )

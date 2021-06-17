@@ -48,6 +48,7 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+    
 }
 
 @mixin backgroundImage {
@@ -58,6 +59,12 @@
 
 @mixin desktop {
     @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop-small {
+    @media (max-width: #{$desktop-small}) {
         @content;
     }
 }

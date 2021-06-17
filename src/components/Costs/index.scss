@@ -6,12 +6,12 @@
     margin: 5rem 0;
     .container {
         @include container;
+        padding: 0 2rem;
         @include small-tablet() {
             flex-direction: column-reverse;
         }
 
         &__text {
-            max-width: 550px;
             margin-right: 1.5rem;
             @include small-tablet() {
                 margin-top: 2rem;
@@ -22,13 +22,13 @@
             }
             h3 {
                 @include titleH3;
-                max-width: 240px;
+                text-align: left;
             }
             p {
                 @include paragraph($text, 1rem, normal);
                 line-height: 28px;
                 max-width: 444px;
-                text-align: left;                
+                text-align: left;
                 @include small-tablet() {
                     text-align: center;
                     max-width: 330px;
@@ -39,7 +39,13 @@
             }
         }
 
-        img {
+        .cost-image {
+            @include desktop-small() {
+                max-width: 384px;
+            }
+            @include small-tablet() {
+                max-width: 584px;
+            }
             @include small-tablet() {
                 width: 100%;
             }
