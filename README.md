@@ -37,6 +37,5 @@ After this, a 'build' folder will be created at the root of the project containi
 
 For this project a library [https://www.npmjs.com/package/react-lean-analytics?activeTab=readme](https://www.npmjs.com/package/react-lean-analytics?activeTab=readme) can be used for monitoring [https://leananalytics.io/](https://leananalytics.io/)
 
-![Alt text](src\Capturar.JPG)
 ![alt text](https://github.com/yurirolandi/nannyshare/blob/master/src/Capturar.JPG?raw=true)
 
