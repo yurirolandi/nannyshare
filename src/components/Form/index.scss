@@ -22,7 +22,7 @@
       border-radius: 4px;
       width: 100%;
       @include small-tablet() {
-        width: 384px;
+        width: 328px;
         margin: 0.8rem 0;
       }
     }
@@ -32,7 +32,7 @@
       color: white;
       border: none;
       @include small-tablet() {
-        width: 100%;
+        width: 328px;
       }
     }
   }

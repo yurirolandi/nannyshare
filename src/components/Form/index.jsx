@@ -47,7 +47,7 @@ export default function Form() {
     <form className="share-form" onSubmit={handleSubmit(handlerSubmit)}>
       <div className="input-block">
         <Stack
-          spacing="5px"
+          spacing="1px"
           direction="row"
           flexWrap="wrap"
           align="center"
