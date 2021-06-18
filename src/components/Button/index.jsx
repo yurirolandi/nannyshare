@@ -1,9 +1,11 @@
 import React from "react";
-import "./index.scss"
+import "./index.scss";
 
-
-export default function ButtonPrimary({text, handlerClick}) {
-    return (
-        <button className="button-primary" onClick={handlerClick}>{text}</button>
-    )
+// eslint-disable-next-line react/prop-types
+export default function ButtonPrimary({ text, handlerClick }) {
+  return (
+    <button className="button-primary" onClick={handlerClick}>
+      {text}
+    </button>
+  );
 }

@@ -10,17 +10,17 @@ import Daily from "../components/Daily";
 import Footer from "../components/Footer";
 
 export default function Home() {
-    return (
-        <>
-            <NavBar />
-            <Hero />
-            <DayCare />
-            <Costs />
-            <ContactUs />
-            <SharedPayments />
-            <Framework />
-            <Daily />
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <NavBar />
+      <Hero />
+      <DayCare />
+      <Costs />
+      <ContactUs />
+      <SharedPayments />
+      <Framework />
+      <Daily />
+      <Footer />
+    </>
+  );
 }

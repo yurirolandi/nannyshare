@@ -1,9 +1,6 @@
 import React from "react";
-import "./index.scss"
-
+import "./index.scss";
 
 export default function BorderLine() {
-    return (
-        <div className="border-line"></div>
-    )
+    return <div className="border-line" />;
 }
