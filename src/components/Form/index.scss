@@ -2,35 +2,38 @@
 @import "../../assets/styles/mixins";
 
 .share-form {
-    margin-top: 2rem;
-    
+  margin-top: 2rem;
+
+  @include mobile() {
+    width: 100%;
+  }
+  .input-block {
+    display: flex;
     @include mobile() {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    input#name,
+    input#email {
+      padding: 0.8rem;
+      border: 1px solid #dfdfdf;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      @include small-tablet() {
+        width: 384px;
+        margin: 0.8rem 0;
+      }
+    }
+    button {
+      padding: 1rem;
+      background-color: $secondary;
+      color: white;
+      border: none;
+      @include small-tablet() {
         width: 100%;
+      }
     }
-    .input-block {
-        display: flex;
-        @include mobile() {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        input#name,
-        input#email {
-            padding: 0.8rem;
-            border: 1px solid #dfdfdf;
-            box-sizing: border-box;
-            border-radius: 4px;
-            margin: 0 0.8rem; 
-            width: 100%;
-            @include small-tablet() {
-                margin: 0.8rem 0;
-            }
-        }
-        button{
-            padding: 1rem; 
-            background-color: $secondary;
-            color: white;
-            border: none;
-        }
-    }
+  }
 }

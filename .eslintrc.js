@@ -19,5 +19,6 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": 0,
     "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
   },
 };
