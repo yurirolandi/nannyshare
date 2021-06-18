@@ -39,3 +39,5 @@ For this project a library [https://www.npmjs.com/package/react-lean-analytics?a
 
 ![alt text](https://github.com/yurirolandi/nannyshare/blob/master/src/Capturar.JPG?raw=true)
 
+- Link of the built project https://elated-albattani-3660c2.netlify.app/
+
