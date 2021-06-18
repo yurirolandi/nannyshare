@@ -4,7 +4,7 @@ import "./index.scss";
 // eslint-disable-next-line react/prop-types
 export default function ButtonPrimary({ text, handlerClick }) {
   return (
-    <button className="button-primary" onClick={handlerClick}>
+    <button type="button" className="button-primary" onClick={handlerClick}>
       {text}
     </button>
   );

@@ -7,6 +7,7 @@ export default function NavBar() {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
 
   function handleShareHost() {
+    // eslint-disable-next-line no-console
     console.log("hello");
   }
 

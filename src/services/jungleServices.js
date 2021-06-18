@@ -8,6 +8,7 @@ export const jungleServices = {
         .post("/challenge-newsletter/", body)
         .then((response) => response.data);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log("An error occurred while trying to send the form ", error);
       return error;
     }

@@ -17,6 +17,7 @@ module.exports = {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/prop-types": false,
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
   },
 };
